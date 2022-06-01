@@ -113,9 +113,11 @@ else:
     time.sleep(2)
 if points > 75:
     print(Fore.BLUE + 'You`ve reached {} Points and won the quizgame!'.format(points))
-    exita = input('')
+    print(Fore.RED + 'Press Enter to exit!')
+    exita = input('> ')
+    exit()
 elif points < 75:
     print(Fore.BLUE + 'You`ve reached {} Points and lost the quizgame, sad!'.format(points))
     print(Fore.RED + 'Press Enter to exit!')
-exita = input('')
+exitb = input('> ')
 exit()
